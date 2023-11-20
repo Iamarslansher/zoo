@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Ticket Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="ticketsForm">
+            <h2>Tickets Form</h2>
+            <form action="#">
+                <input class="formInput" type="text" placeholder="Date">
+                <br>
+                <input class="formInput" type="number" placeholder="Children">
+                <br>
+                <input class="formInput" type="number" placeholder="adult 18+">
+                <br>
+                <input class="formInput" type="number" placeholder="men 40+">
+                <h3> payment via :</h3>
+
+                <!-- <input class="formInput" type="text"> -->
+                <label for="cars">Choose Payment method:</label>
+                <select name="payment" id="paymentMethod">
+                    <option value="volvo">Chose</option>
+                    <option value="volvo">Jazzcash</option>
+                    <option value="saab">Mobile Account</option>
+                    <option value="opel">Bank Account</option>
+                </select>
+                <br>
+                <button class="submitBtn" onclick="submitFunction()">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+
+        function submitFunction() {
+            Swal.fire({
+                title: "THANK YOU!",
+                text: "Your tickets has been booked!",
+                icon: "success"
+            });
+        }
+    </script>
+
+</body>
+
+</html>

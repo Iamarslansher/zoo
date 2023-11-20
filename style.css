@@ -1,0 +1,156 @@
+.dark-mode {
+  background-color: rgb(54, 50, 50);
+  color: white;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* navCSS */
+
+.nav-bar {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.toggle-btn {
+  margin-right: 10px;
+}
+
+/* toggle-btn */
+
+#checkbox {
+  display: none;
+}
+
+.toggle-label {
+  height: 20px;
+  width: 30px;
+  background-color: rgb(90, 88, 88);
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+}
+
+.toggle-ball {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  transition: all 0.3s linear;
+}
+
+#checkbox:checked + .toggle-label .toggle-ball {
+  background-color: black;
+  transform: translateX(12px);
+}
+
+/* main-contant CSS */
+
+.main-contant {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main-contant__text-part CSS */
+
+.main-text {
+  width: 40%;
+  margin-left: 20px;
+  text-indent: 15px;
+}
+
+.main-text h1 {
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main-text p {
+  line-height: 25px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* main-contant-button__CSS */
+
+.ticketClass {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 7px;
+  border-radius: 30px;
+  font-size: 20px;
+  width: 80%;
+  cursor: pointer;
+}
+.ticketClass:hover {
+  background-color: blue;
+}
+
+.ticketClass a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+/* main-contant__gallery-part CSS */
+
+.gallery {
+  margin-top: 70px;
+  flex-basis: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 130px;
+  gap: 6px;
+}
+.image:hover {
+  background-position: center;
+  background-blend-mode: normal;
+  box-shadow: 0 0 5px rgb(22, 10, 10);
+  cursor: pointer;
+  font-size: 0;
+}
+.image {
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 40, 40);
+  background-blend-mode: soft-light;
+  transition: all 1s ease-in-out;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+.row-2 {
+  grid-row: span 2;
+}
